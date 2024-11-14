@@ -4,7 +4,11 @@
 }
 :root
 {
-    --text-color-grey: #757575;
+    --text-color-white: white;
+}
+:root
+{
+    --blue-color: #137BC9;
 }
 *{
     font-family: 'Roboto', sans-serif;  /*  Тут я використав chatGPT */
@@ -22,7 +26,8 @@
 .order_service
 {
     color: white;
-    background-color: #137BC9;
+    background-color: var(--blue-color);
+    border: none;
 }
 .main_title
 {
@@ -30,21 +35,38 @@
 }
 .blue_text
 {
-    color: #137BC9;
-}
-.grey_text
-{
-    color: var(--text-color-grey);
+    color: var(--blue-color);
 }
 .white_text
 {
-    color: white;
+    color: var(--text-color-white);
 }
 footer
 {
     background-color: var(--background-color);
 }
-.grey_background>li
+.grey_background li
 {
     background-color:#F5F4FA;                           /* Тут я хотів зробити як в фігмі сіру тінь, але я не знаю як це зробить нормально і я зробив як знаю🙃*/
+}
+.white_text_opacity
+{
+    color: var(--text-color-white);
+    opacity: 60%;
+}
+.grey_text_color
+{
+    color: #757575;
+}
+#blue_hover:hover
+{
+    color: var(--blue-color);
+}
+.all:visited
+{
+    color: var(--blue-color);
+}
+.web-sites:visited
+{
+    color: var(--blue-color);
 }

@@ -1,63 +1,170 @@
+/* Змінні */
 :root
 {
     --background-color: #2F303A;
 }
+
 :root
 {
     --text-color-white: white;
 }
+
 :root
 {
     --blue-color: #137BC9;
 }
+
+/* Шрифти */
+
 *{
-    font-family: 'Roboto', sans-serif;  /*  Тут я використав chatGPT */
+    font-family: 'Roboto', sans-serif;
     text-decoration: none;
     color: #212121;
+}
+
+.main_title
+{
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 30.52px;
+}
+
+header > nav
+{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16.41px;
+}
+
+.business_solutions
+{
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+}
+
+.order_service
+{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.about
+{
+    font-size: 14px;
+}
+
+.about>h4
+{
+    font-weight: 700;
+    line-height: 16.41px;
+}
+
+.about>h5
+{
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.our-work
+{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42.19px;
+}
+
+.our_team>h2
+{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42.19px;
+}
+
+.our_team>h4
+{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.75px;
+}
+
+.our_team>p
+{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.75px;
+}
+
+footer > nav
+{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.categories
+{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.list-object>h3
+{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 36px;
+}
+
+.list-object>p
+{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+}
+/* Кольори */
+
+.blue_text
+{
+    color: var(--blue-color);
+}
+
+.white_text
+{
+    color: var(--text-color-white);
+}
+
+.grey_text_color
+{
+    color: #757575;
+}
+
+.white_text_opacity
+{
+    color: var(--text-color-white);
+    opacity: 60%;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* Кольори фону */
+.business_solutions
+{
+    background-color: var(--background-color);
 }
 .our_team
 {
     background-color: #F5F4FA;
 }
-.business_solutions
-{
-    background-color: var(--background-color);
-}
-.order_service
-{
-    color: white;
-    background-color: var(--blue-color);
-    border: none;
-}
-.blue_text
-{
-    color: var(--blue-color);
-}
-.main_title
-{
-    font-family: 'Raleway';
-}
-.white_text
-{
-    color: var(--text-color-white);
-}
+
 footer
 {
     background-color: var(--background-color);
 }
-.grey_background li
-{
-    background-color:#F5F4FA;                           /* Тут я хотів зробити як в фігмі сіру тінь, але я не знаю як це зробить нормально і я зробив як знаю🙃*/
-}
-.white_text_opacity
-{
-    color: var(--text-color-white);
-    opacity: 60%;
-}
-.grey_text_color
-{
-    color: #757575;
-}
+
+/* Псвевдокласи */
+
 #blue_hover:hover
 {
     color: var(--blue-color);
@@ -69,4 +176,17 @@ footer
 .web-sites:visited
 {
     color: var(--blue-color);
+}
+
+/* Інше */
+
+.order_service
+{
+    color: white;
+    background-color: var(--blue-color);
+    border: none;
+}
+
+ul > li{
+    list-style: none;
 }

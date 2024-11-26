@@ -1,192 +1,185 @@
-/* Змінні */
 :root
 {
-    --background-color: #2F303A;
+    --grey-background: #2F303A;
 }
 
 :root
 {
-    --text-color-white: white;
+    --color-white: white;
 }
 
 :root
 {
-    --blue-color: #137BC9;
+    --blue-color: #2196F3;
 }
 
-/* Шрифти */
+:root
+{
+    --grey-color: #757575;
+}
+/* all* */
 
 *{
-    font-family: 'Roboto', sans-serif;
     text-decoration: none;
-    color: #212121;
+    list-style: none;
+    font-family: 'Roboto';
 }
 
-.main_title
+a
 {
+    color: black;
+}
+
+/* header */
+
+header .main-title
+{
+    color: black;
     font-family: 'Raleway';
-    font-weight: 700;
     font-size: 26px;
+    font-weight: 700;
     line-height: 30.52px;
+    letter-spacing: 0.03em;
+    text-align: left;
 }
-
-header > nav
-{
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16.41px;
-}
-
-.business_solutions
-{
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 60px;
-}
-
-.order_service
-{
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 30px;
-}
-
-.about
-{
-    font-size: 14px;
-}
-
-.about>h4
-{
-    font-weight: 700;
-    line-height: 16.41px;
-}
-
-.about>h5
-{
-    font-weight: 400;
-    line-height: 24px;
-}
-
-.our-work
-{
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 42.19px;
-}
-
-.our_team>h2
-{
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 42.19px;
-}
-
-.our_team>h4
-{
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 18.75px;
-}
-
-.our_team>p
-{
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 18.75px;
-}
-
-footer > nav
-{
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-}
-
-.categories
-{
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 26px;
-}
-
-.list-object>h3
-{
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 36px;
-}
-
-.list-object>p
-{
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 30px;
-}
-/* Кольори */
-
-.blue_text
+header .main-title span
 {
     color: var(--blue-color);
 }
 
-.white_text
+.nav-header li
 {
-    color: var(--text-color-white);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.41px;
+    letter-spacing: 0.02em;
+    text-align: left;
 }
 
-.grey_text_color
+.nav-header li:hover a
 {
-    color: #757575;
+    color: var(--blue-color);
 }
 
-.white_text_opacity
+.nav-header div a, p
 {
-    color: var(--text-color-white);
-    opacity: 60%;
+    color: var(--grey-color);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.41px;
+    letter-spacing: 0.02em;
+    text-align: left;
+}
+
+.nav-header div a:hover p
+{
+    color: var(--blue-color);
+}
+
+/* main */
+
+.business-solutions
+{
+    background-color: var(--grey-background);
+    color: white;
+    text-transform: uppercase;
+}
+
+.order-service
+{
+    width: 216px;
+    height: 50px;
+    background-color: var(--blue-color);
+    color: white;
+}
+.order-service h1
+{
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    text-align: center;
+}
+
+.about h5
+{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16.41px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    text-transform: uppercase;
+}
+.about h6
+{
     font-size: 14px;
     font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    text-align: left;
 }
 
-/* Кольори фону */
-.business_solutions
+.our-work h4
 {
-    background-color: var(--background-color);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 42.19px;
+    letter-spacing: 0.03em;
+    text-align: center;
 }
+
 .our_team
 {
     background-color: #F5F4FA;
 }
+.our_team h2
+{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 42.19px;
+    letter-spacing: 0.03em;
+    text-align: center;
+}
+
+/* footer */
 
 footer
 {
-    background-color: var(--background-color);
+    background-color: var(--grey-background);
 }
 
-/* Псвевдокласи */
-
-#blue_hover:hover
-{
-    color: var(--blue-color);
-}
-.all:visited
-{
-    color: var(--blue-color);
-}
-.web-sites:visited
-{
-    color: var(--blue-color);
-}
-
-/* Інше */
-
-.order_service
+footer .main-title
 {
     color: white;
-    background-color: var(--blue-color);
-    border: none;
+    font-family: 'Raleway';
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 30.52px;
+    letter-spacing: 0.03em;
+    text-align: left;
 }
 
-ul > li{
-    list-style: none;
+footer .main-title span
+{
+    color: var(--blue-color);
+}
+
+.nav-footer
+{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    text-align: left;
+}
+
+.nav-footer .location
+{
+    color: white;
+}
+
+.nav-footer .email, .number
+{
+    color: #FFFFFF60;
 }

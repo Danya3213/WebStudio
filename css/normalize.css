@@ -4,3 +4,19 @@
     font-family: 'Roboto';
     color: #212121;
 }
+
+.container
+{
+    margin: 0px 215px;
+}
+
+header
+{
+    border-bottom: 1px solid #ECECEC;
+}
+
+button
+{
+    border: none;
+    border-radius: 4px;
+}

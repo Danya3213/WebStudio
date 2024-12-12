@@ -90,8 +90,9 @@ header .main-title span
     font-weight: 900;
     line-height: 60px;
     letter-spacing: 0.06em;
-    text-align: center;
+    text-align:center;
     color: white;
+    width: 696px;
 }
 
 .order-service
@@ -148,11 +149,11 @@ header .main-title span
     text-align: center;
 }
 
-.our_team
+.our-team
 {
     background-color: #F5F4FA;
 }
-.our_team h2
+.our-team h2
 {
     font-size: 36px;
     font-weight: 700;
@@ -188,6 +189,12 @@ header .main-title span
     letter-spacing: 0.03em;
     text-align: left;
 }
+
+.our-team p:last-of-type
+{
+    margin-bottom: 0px;
+}
+
 /* footer */
 
 footer
@@ -204,6 +211,7 @@ footer .main-title
     line-height: 30.52px;
     letter-spacing: 0.03em;
     text-align: left;
+    margin-top: 0px;
 }
 
 footer .main-title span
@@ -228,4 +236,5 @@ footer .main-title span
 #nav-footer .email, #nav-footer .number
 {
     color: #FFFFFF60;
+    margin-bottom: 0px;
 }

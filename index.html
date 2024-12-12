@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebStudio</title>
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"  rel="stylesheet">
@@ -11,71 +12,83 @@
 </head>
 <body>
     <header>
-        <h2 class="main-title"><span class="web">Web</span>Studio</h2>
-        <nav class="nav-header">
-            <ul>
-                <li><a href="/index.html"><h5 class="studio" style="color: #2196F3;">Студія</h5></a></li>                       <!--Тут був би конфлікт з кольорами, бо в index.html кнопка студіо синя, а портфоліо чорна, а в проекті portfolio.html навпаки, тому використав інлайновий стиль😶. Можна було б створити новий style.css, але я вважаю що так краще🙃-->
-                <li><a href="/portfolio.html"><h5 id="portfolio">Портфоліо</h5></a></li>
-                <li><a href="#nav-footer"><h5 id="contacts">Контакти</h5></a></li>
-            </ul>
-            <div>
-                <a href="mailto:info@devstudio.com"><p class="email">info@devstudio.com</p></a>
-                <p class="number">+38 096 111 11 11</p>
-            </div>
-        </nav>
+        <div class="container">
+            <h2 class="main-title"><span class="web">Web</span>Studio</h2>
+            <nav class="nav-header">
+                <ul>
+                    <li><a href="/index.html"><h5 class="studio" style="color: #2196F3;">Студія</h5></a></li>                       <!--Тут був би конфлікт з кольорами, бо в index.html кнопка студіо синя, а портфоліо чорна, а в проекті portfolio.html навпаки, тому використав інлайновий стиль😶. Можна було б створити новий style.css, але я вважаю що так краще🙃-->
+                    <li><a href="/portfolio.html"><h5 id="portfolio">Портфоліо</h5></a></li>
+                    <li><a href="#nav-footer"><h5 id="contacts">Контакти</h5></a></li>
+                </ul>
+                <div>
+                    <a href="mailto:info@devstudio.com"><p class="email">info@devstudio.com</p></a>
+                    <p class="number">+38 096 111 11 11</p>
+                </div>
+            </nav>
+        </div>
     </header>
     <main>
         <div class="business-solutions">
-            <h1>ефективніі рішення для <br> вашого Бізнесу</h1>
-            <button class="order-service"><h4>Замовити послугу</h4></button>
+            <div class="container">
+                <h1>ефективніі рішення для вашого бізнесу</h1>
+                <button class="order-service">Замовити послугу</button>
+            </div>
         </div>
-        <br>
         <div class="about">
-            <h5>Увага до деталей</h5>
-            <h6>Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</h6>
-            <h5>Пунктуальність</h5>
-            <h6>Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</h6>
-            <h5>Планування</h5>
-            <h6>Так само консультація з широким активом значною мірою зумовлює.</h6>
-            <h5>Сучасні технології</h5>
-            <h6>Значимість цих проблем настільки очевидна, що реалізація планових завдань.</h6>
+            <div class="container">
+                <h5>Увага до деталей</h5>
+                <h6>Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</h6>
+                <h5>Пунктуальність</h5>
+                <h6>Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</h6>
+                <h5>Планування</h5>
+                <h6>Так само консультація з широким активом значною мірою зумовлює.</h6>
+                <h5>Сучасні технології</h5>
+                <h6>Значимість цих проблем настільки очевидна, що реалізація планових завдань.</h6>
+            </div>
         </div>
-        <br>
         <div class="our-work">
-            <h4>Чим ми займаємося</h4>
-            <img src="/img/keyboard.jpg" alt="keyboard" width="250" height="250">
-            <img src="/img/telephone.jpg" alt="telephone" width="250" height="250"> 
-            <img src="/img/table.jpg" alt="table" width="250" height="250">
+            <div class="container">
+                <h4>Чим ми займаємося</h4>
+                <img src="/img/keyboard.jpg" alt="keyboard" width="250" height="250">
+                <img src="/img/telephone.jpg" alt="telephone" width="250" height="250"> 
+                <img src="/img/table.jpg" alt="table" width="250" height="250">
+            </div>
         </div>
-        <br>
-        <div class="our_team">
-            <h2>Наша команда</h2>
-            <img src="/img/person1.jpg" alt="" width="270" height="260">
-            <h4>Ігор Дем'яненко</h4>
-            <p class="grey_text_color">Product Designer</p>
-            <br>
-            <img src="/img/person2.jpg" alt="" width="270" height="260">
-            <h4>Ольга Рєпіна</h4>
-            <p class="grey_text_color">Frontend Developer</p>
-            <br>
-            <img src="/img/person3.jpg" alt="" width="270" height="260">
-            <h4>Микола Тарасов</h4>
-            <p class="grey_text_color">Marketing</p>
-            <br>
-            <img src="/img/person4.jpg" alt="" width="270" height="260">
-            <h4>Михайло Єрмаков</h4>
-            <p class="grey_text_color">UI Designer</p>
+        <div class="our-team">
+            <div class="container">
+                <h2>Наша команда</h2>
+                <div class="our_team-child">
+                    <img src="/img/person1.jpg" alt="" width="270" height="260">
+                    <h4>Ігор Дем'яненко</h4>
+                    <p>Product Designer</p>
+                </div>
+                <div>
+                    <img src="/img/person2.jpg" alt="" width="270" height="260">
+                    <h4>Ольга Рєпіна</h4>
+                    <p>Frontend Developer</p>
+                </div>
+                <div>
+                    <img src="/img/person3.jpg" alt="" width="270" height="260">
+                    <h4>Микола Тарасов</h4>
+                    <p>Marketing</p>
+                </div>
+                <div>
+                    <img src="/img/person4.jpg" alt="" width="270" height="260">
+                    <h4>Михайло Єрмаков</h4>
+                    <p>UI Designer</p>
+                </div>
+            </div>
         </div>
     </main>
     <footer>
-        <br>
-        <h2 class="main-title"><span class="web">Web</span>Studio</h2>
-        <nav id="nav-footer">
-            <a href="https://www.google.com.ua/maps/place/GoITeens/@50.4270576,30.5377054,21z/data=!4m6!3m5!1s0x40d4cf11a1516e25:0xcb31e5389cead445!8m2!3d50.4270472!4d30.5377493!16s%2Fg%2F11kprqb_30?hl=ru&entry=ttu&g_ep=EgoyMDI0MTAxNi4wIKXMDSoASAFQAw%3D%3D" target="_blank"><p class="location">м. Київ, пр-т Лесі Українки, 26</p></a>
-            <a href="mailto:info@devstudio.com"><p class="email">info@devstudio.com</p></a>
-            <p class="number">+38 096 111 11 11</p>
-        </nav>
-        <br>
+        <div class="container">
+            <h2 class="main-title"><span class="web">Web</span>Studio</h2>
+            <nav id="nav-footer">
+                <a href="https://www.google.com.ua/maps/place/GoITeens/@50.4270576,30.5377054,21z/data=!4m6!3m5!1s0x40d4cf11a1516e25:0xcb31e5389cead445!8m2!3d50.4270472!4d30.5377493!16s%2Fg%2F11kprqb_30?hl=ru&entry=ttu&g_ep=EgoyMDI0MTAxNi4wIKXMDSoASAFQAw%3D%3D" target="_blank"><p class="location">м. Київ, пр-т Лесі Українки, 26</p></a>
+                <a href="mailto:info@devstudio.com"><p class="email">info@devstudio.com</p></a>
+                <p class="number">+38 096 111 11 11</p>
+            </nav>
+        </div>
     </footer>
 </body>
 </html>

@@ -1,28 +1,12 @@
 :root
 {
     --grey-background: #2F303A;
-}
-
-:root
-{
     --color-white: white;
-}
-
-:root
-{
     --blue-color: #2196F3;
-}
-
-:root
-{
     --grey-color: #757575;
 }
-/* all* */
 
-a
-{
-    color: #212121  ;
-}
+
 
 /* header */
 
@@ -94,6 +78,7 @@ header .main-title span
     color: white;
     width: 696px;
     margin-top: 0px;
+    margin-bottom: 30px;
 }
 
 .order-service
@@ -169,7 +154,6 @@ header .main-title span
     font-weight: 500;
     line-height: 26px;
     letter-spacing: 0.03em;
-    /* text-align: center; */
 }
 
 .list-object h3
@@ -201,6 +185,7 @@ header .main-title span
 footer
 {
     background-color: var(--grey-background);
+    padding: 60px 0px;
 }
 
 footer .main-title
@@ -238,4 +223,110 @@ footer .main-title span
 {
     color: #FFFFFF60;
     margin-bottom: 0px;
+}
+
+header .container, .nav-header, .nav-header ul, .nav-header a
+{
+    display: flex;
+    align-items: center;
+    
+}
+
+header
+{
+    height: 80px;
+}
+
+
+
+
+
+
+header p, header ul, header h2
+{
+    margin: 0px;
+}
+
+
+
+
+
+
+
+
+
+.our-work .container .our-images
+{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.business-solutions .container
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 600px;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-header div
+{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.categories .container ul li
+{
+    height: 26px;
+    background-color: #F5F4FA;
+    height: 38px;
+    align-content: center;
+    border-radius: 4px;
+    min-width: 73px;
+    padding: 6px 22px;
+}
+
+.categories .container ul li h4
+{
+    height: 26px;
+    background-color: #F5F4FA;
+    margin: 0;
+}
+
+.categories .container ul li:hover
+{
+    background-color: #2196F3;
+}
+
+
+
+
+.categories .container ul
+{
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.list .container
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+
+}
+
+.list-object
+{
+    height: 404px;
+    width: 370px;
+    border: 1px solid #EEEEEE;
 }
